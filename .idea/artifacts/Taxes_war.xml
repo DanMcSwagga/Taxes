@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Taxes:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Taxes-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Taxes:war exploded" />
+    </root>
+  </artifact>
+</component>
