@@ -22,17 +22,7 @@ public class ContextListener implements ServletContextListener {
     private int count;
     private double sum;
 
-    private static final String QUERY_SELECT_ALL = "SELECT\n" +
-            "    income.id,\n" +
-            "    income.month,\n" +
-            "    income.amount,\n" +
-            "    income.tax_payer,\n" +
-            "    income_type.id AS type_id,\n" +
-            "    income_type.tax_rate,\n" +
-            "    income_type.name\n" +
-            "FROM\n" +
-            "    income\n" +
-            "INNER JOIN income_type ON income.type = income_type.id;";
+    private static final String QUERY_SELECT_ALL = "SELECT income.id, income.month, income.amount, income.tax_payer, income_type.id AS type_id, income_type.tax_rate, income_type.name FROM income INNER JOIN income_type ON income.type = income_type.id;";
 
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
